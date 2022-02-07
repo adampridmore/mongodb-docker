@@ -5,7 +5,7 @@ services:
     container_name: rs-mongo1
     image: mongo:4.2
     volumes:
-      - ./replica/data1:/db/data
+      - ./replica/data1:/data/db
       - ./rs-init.sh:/scripts/rs-init.sh
     networks:
       - mongors-network
