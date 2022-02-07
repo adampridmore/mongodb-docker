@@ -9,4 +9,4 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - /Users/adampridmore/work/mongodb-data:/data/db
+      - /Users/adampridmore/work/mongodb/standalone:/data/db
