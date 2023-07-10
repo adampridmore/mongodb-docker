@@ -9,4 +9,4 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - ./data:/data/db
+      - /Users/adampridmore/mongodb-data/monogodb-docker-data:/data/db
