@@ -14,7 +14,7 @@ services:
     links:
       - mongo2
       - mongo3
-    restart: always
+    # restart: always
     entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "dbrs", "--port", "27021" ]
   mongo2:
     container_name: rs-mongo2
@@ -25,7 +25,7 @@ services:
       - mongors-network
     ports:
       - 27022:27022
-    restart: always
+    # restart: always
     entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "dbrs", "--port", "27022"]
   mongo3:
     container_name: rs-mongo3
@@ -36,7 +36,7 @@ services:
       - mongors-network
     ports:
       - 27023:27023
-    restart: always
+    # restart: always
     entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "dbrs", "--port", "27023" ]
 
 networks:
